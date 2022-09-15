@@ -1,0 +1,19 @@
+########################################################################################################################
+# 2022
+########################################################################################################################
+
+Pen & Paper Exercises in Machine Learning
+    What did the authors try to accomplish?
+        This is a useful collection of mathematical exercises and solutions related to the field of machine learning.
+        Topics covered: Linear Algebra, Optimization, Directed Graphical Models, Undirected Graphical Models, Expressive Power of Graphical Models, Factor Graphs and Message Passing, Inference for Hidden Markov Models, Model-Based Learning, Sampling and Monte Carlo Integration, Variational Inference.
+    What were the key elements of the approach?
+        - detailed solutions
+        - various topics covered
+    What can you use yourself?
+        - could be used as a refresher or all the covered topics
+        - could be used for a flashcard system where you are given the question and you have to write the solution
+    What other references do you want to follow?
+        - (book) Monte Carlo theory, methods and examples: https://artowen.su.domains/mc/
+        - (book) Pattern Recognition and Machine Learning by Christopher M. Bishop: https://link.springer.com/book/9780387310732
+        - Applications of Kalman Filtering in Aerospace 1960 to the Present
+        - Fast and robust fixed-point algorithms for independent component analysis

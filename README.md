@@ -2,8 +2,11 @@
 
 Stores reviews of scientific papers :scientist: 📄.
 
+Currently all reviews can be found in the `reviews.txt` file. They are sorted by year of publishing.
+
 ## Coming up
 
+- [X] [Pen & Paper Exercises in Machine Learning](https://arxiv.org/pdf/2206.13446.pdf)
 - [ ] [Statistical Modeling: The Two Cultures](https://www.jstor.org/stable/2676681?origin=JSTOR-pdf)
 - [ ] [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
 - [ ] [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
@@ -12,7 +15,7 @@ Stores reviews of scientific papers :scientist: 📄.
 
 ## Template
 
-1. What did the authors try to accomplish?
-2. What were the key elements of the approach?
-3. What can you use yourself?
-4. What other references do you want to follow?
+What did the authors try to accomplish?
+What were the key elements of the approach?
+What can you use yourself?
+What other references do you want to follow?
