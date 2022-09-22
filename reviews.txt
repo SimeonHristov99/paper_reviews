@@ -17,3 +17,15 @@ Pen & Paper Exercises in Machine Learning
         - (book) Pattern Recognition and Machine Learning by Christopher M. Bishop: https://link.springer.com/book/9780387310732
         - Applications of Kalman Filtering in Aerospace 1960 to the Present
         - Fast and robust fixed-point algorithms for independent component analysis
+
+How to play any mental game or A Completeness Theorem for Protocols with Honest Majority
+    What did the authors try to accomplish?
+        Lengthy paper in which the authors lay out a protocol for simulating the trusted party of an ideal game. That is, if more than half of the players follow the protocol, whatever a player (or a set of players of size less than n/2) knows at any step of the game, he would have also known in an idea execution of the game with a trusted party.
+    What were the key elements of the approach?
+        Related to cryptography and game theory.
+        The knowledge constraints are satisfied in a computational complexity sense. Namely, any player in order to compute anything more than his due share of current state, should perform an exponential-time computation.
+    What can you use yourself?
+        This is mainly a paper to be used for source of ideas. Not as related to AI.
+    What other references do you want to follow?
+        None, since not directly related to AI.
+
