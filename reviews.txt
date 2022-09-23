@@ -29,3 +29,14 @@ How to play any mental game or A Completeness Theorem for Protocols with Honest 
     What other references do you want to follow?
         None, since not directly related to AI.
 
+Leveraging Local Patch Differences in Multi-Object Scenes for Generative Adversarial Attacks
+    What did the authors try to accomplish?
+        They successfully fool a multi-class image classification neural network for all labels in an image by misaligning patches in the feature map, produced by the model.
+    What were the key elements of the approach?
+        The perturbations are imperceivable.
+        They use a new loss function.
+        They use a generative model.
+    What can you use yourself?
+        The concept of using generative models to fool object classification models is new and provides room for research.
+    What other references do you want to follow?
+        1, 2, 5, 7, 12, 45
