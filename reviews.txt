@@ -40,3 +40,17 @@ Leveraging Local Patch Differences in Multi-Object Scenes for Generative Adversa
         The concept of using generative models to fool object classification models is new and provides room for research.
     What other references do you want to follow?
         1, 2, 5, 7, 12, 45
+
+Text2Light: Zero-Shot Text-Driven HDR Panorama Generation
+    What did the authors try to accomplish?
+        Introduce a model that can generate 4K panoramic images without being trained on image-text pairs.
+    What were the key elements of the approach?
+        - use CLIP: zero-shot text-to-image generation and manipulation without paired data.
+        - have two stages: first generate a low resolution image and then scale it up using inverse tone mapping.
+        - use two codebooks
+    What can you use yourself?
+        - the algorithm is very detailed and there are a lot of helpful pictures
+        - if writing a paper related to GANs and high quality image generation, this paper will be inspirational
+    What other references do you want to follow?
+        inverse tone mapping, avatarCLIP, Text2Human, COCO-GAN, ExpandNet, GLIDE, StyleCLIP, Zero-Shot Text-to-Image Generation, Improved techniques for training gans, Deep learning for HDR imaging: state-of-the-art and future trends, CLIP-GEN, The unreasonable effectiveness of deep features as a perceptual metric.
+
