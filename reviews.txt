@@ -54,3 +54,13 @@ Text2Light: Zero-Shot Text-Driven HDR Panorama Generation
     What other references do you want to follow?
         inverse tone mapping, avatarCLIP, Text2Human, COCO-GAN, ExpandNet, GLIDE, StyleCLIP, Zero-Shot Text-to-Image Generation, Improved techniques for training gans, Deep learning for HDR imaging: state-of-the-art and future trends, CLIP-GEN, The unreasonable effectiveness of deep features as a perceptual metric.
 
+Diabetic foot ulcers monitoring by employing super resolution and noise reduction deep learning techniques
+    What did the authors try to accomplish?
+        Improve the performance of models that segment diabetic foot ulcers.
+    What were the key elements of the approach?
+        They combined noise reduction and super-resolution. They also modified the loss function by including additional penalties.
+    What can you use yourself?
+        Interesting paper if concerned with semantic segmentation of medical images.
+    What other references do you want to follow?
+        3, 4, 5, 6, 8, 9, 10, 12, 13, 14, 17, 18, 19, 20, 24, 26, 28, 32, 33, 36
+
