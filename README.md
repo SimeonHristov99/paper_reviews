@@ -20,9 +20,10 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [Leveraging Local Patch Differences in Multi-Object Scenes for Generative Adversarial Attacks](http://arxiv.org/abs/2209.09883)
 - [X] [Text2Light: Zero-Shot Text-Driven HDR Panorama Generation](http://arxiv.org/abs/2209.09898)
 - [X] [Diabetic foot ulcers monitoring by employing super resolution and noise reduction deep learning techniques](https://arxiv.org/pdf/2209.09880.pdf)
+- [X] [Comparison of Reasoners for large Ontologies in the OWL 2 EL Profile](https://www.semantic-web-journal.net/sites/default/files/swj120_2.pdf)
 ## Template
 
-What did the authors try to accomplish?
-What were the key elements of the approach?
-What can you use yourself?
-What other references do you want to follow?
+1. What did the authors try to accomplish?
+2. What were the key elements of the approach?
+3. What can you use yourself?
+4. What other references do you want to follow?

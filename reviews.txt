@@ -1,4 +1,24 @@
 ########################################################################################################################
+# 2011
+########################################################################################################################
+
+Comparison of Reasoners for large Ontologies in the OWL 2 EL Profile
+    What did the authors try to accomplish?
+        List characteristics by which to compare a set of reasoners for large ontologies.
+    What were the key elements of the approach?
+        They list and describe the characteristics - what they mean, why they use them, etc.
+        They describe the ontologies they used for comparison.
+        They describe the reasoners they tested.
+        Characterization dimensions: reasoning characteristics, practical usability, performance indicators.
+        Reasoners: CB, CEL, FaCT++, HermiT, Pellet, RacerPro, Snorocket, TrOWL.
+        Ontologies: GO, NCI, SNOMED CT.
+    What can you use yourself?
+        The main take from this papers is section 5 (Categorization of Reasoners) in which they describe the benchmarking and categorization procedure.
+        It shows how one would go about choosing a reasoner for a real world application - the characteristics they would use, how they would compare the reasoners, etc.
+    What other references do you want to follow?
+        the references referring to the reasoners and logic rules
+
+########################################################################################################################
 # 2022
 ########################################################################################################################
 
