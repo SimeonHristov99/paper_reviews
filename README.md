@@ -21,6 +21,7 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [Text2Light: Zero-Shot Text-Driven HDR Panorama Generation](http://arxiv.org/abs/2209.09898)
 - [X] [Diabetic foot ulcers monitoring by employing super resolution and noise reduction deep learning techniques](https://arxiv.org/pdf/2209.09880.pdf)
 - [X] [Comparison of Reasoners for large Ontologies in the OWL 2 EL Profile](https://www.semantic-web-journal.net/sites/default/files/swj120_2.pdf)
+- [X] [AI-bank of the future: Can banks meet the AI challenge?](https://www.mckinsey.de/~/media/McKinsey/Industries/Financial%20Services/Our%20Insights/AI%20bank%20of%20the%20future%20Can%20banks%20meet%20the%20AI%20challenge/AI-bank-of-the-future-Can-banks-meet-the-AI-challenge.pdf)
 ## Template
 
 1. What did the authors try to accomplish?

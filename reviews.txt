@@ -19,6 +19,23 @@ Comparison of Reasoners for large Ontologies in the OWL 2 EL Profile
         the references referring to the reasoners and logic rules
 
 ########################################################################################################################
+# 2020
+########################################################################################################################
+
+AI-bank of the future: Can banks meet the AI challenge?
+    What did the authors try to accomplish?
+        Present a methodology / blueprint / changes that need to happen in order for banks to integrate AI at scale in order to remain relevant.
+    What were the key elements of the approach?
+        They list the challenges and benefits of using AI, going cloud, etc. Show how to overcome the challenges.
+        They describe in detail what the changes will bring and how to think about them.
+    What can you use yourself?
+        The main take is the Exhibit 6 in which they show how a bank would need to make internal changes and also section 4 (How can banks transform to become AI-first?).
+        There they describe what each layer of changes is and how it will affect the bank.
+        It doesn't have a lot of case studies. It is more broad and abstract rather than specific.
+    What other references do you want to follow?
+        No references listed, but one could research some of the ideas in the article, for example, using facial expression evaluation in order to grant loan / approve transaction.
+
+########################################################################################################################
 # 2022
 ########################################################################################################################
 
