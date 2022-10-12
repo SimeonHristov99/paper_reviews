@@ -101,3 +101,19 @@ Diabetic foot ulcers monitoring by employing super resolution and noise reductio
     What other references do you want to follow?
         3, 4, 5, 6, 8, 9, 10, 12, 13, 14, 17, 18, 19, 20, 24, 26, 28, 32, 33, 36
 
+ESTA: An Esports Trajectory and Action Dataset
+    What did the authors try to accomplish?
+        They created an open-source Python package that can collect data about and visualize CSGO matches using this data.
+        They named the dataset ESTA and it is the most granular dataset for CSGO data.
+        They also benchmarked several models on the task of "win probability" predictions. It seems that MLP was the best.
+    What were the key elements of the approach?
+        They used data from online games.
+        Apart from log loss they also used expected calibration error (ECE) which is a popular metric for win probability models.
+    What can you use yourself?
+        For research and project ideas the most important section is 6 (Concluding Remarks) as they show how this dataset could be used for other purposes, such as:
+            - Trajectory prediction
+            - online learning
+            - temporal and spatial projects
+            - real-world data analysis
+    What other references do you want to follow?
+        Research more about online learning. Also: 1, 2, 3, 8, 10, 12, 17
