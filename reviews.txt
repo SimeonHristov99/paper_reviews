@@ -35,6 +35,19 @@ AI-bank of the future: Can banks meet the AI challenge?
     What other references do you want to follow?
         No references listed, but one could research some of the ideas in the article, for example, using facial expression evaluation in order to grant loan / approve transaction.
 
+Banks banking on AI
+    What did the authors try to accomplish?
+        Outline the current trends in banking not only with abstract/general statements but also with several short case-studies.
+    What were the key elements of the approach?
+        They describe what the problems in AI for banks are.
+        They also describe in what areas AI should be applied (customer service, customer engagement, chatbots, fraud management, etc).
+        They case-studies really help to see the current practical aspects of AI in banks.
+    What can you use yourself?
+        It seems like chatbots (and thus NLP) are the most wide spread form of AI in the banking sector.
+        The area is which AI is applied as well as the case-studies can be used to generate ideas.
+    What other references do you want to follow?
+        None - this is more of an article, rather than a scientific paper.
+
 ########################################################################################################################
 # 2022
 ########################################################################################################################
