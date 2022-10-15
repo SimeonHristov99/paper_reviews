@@ -24,6 +24,8 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [AI-bank of the future: Can banks meet the AI challenge?](https://www.mckinsey.de/~/media/McKinsey/Industries/Financial%20Services/Our%20Insights/AI%20bank%20of%20the%20future%20Can%20banks%20meet%20the%20AI%20challenge/AI-bank-of-the-future-Can-banks-meet-the-AI-challenge.pdf)
 - [X] [ESTA: An Esports Trajectory and Action Dataset](https://arxiv.org/pdf/2209.09861.pdf)
 - [X] [Banks banking on AI](https://garph.co.uk/IJARMSS/Sep2020/G-2835.pdf)
+- [X] [Advances and Open Problems in Federated Learning](https://arxiv.org/pdf/1912.04977.pdf)
+
 ## Template
 
 1. What did the authors try to accomplish?

@@ -49,6 +49,22 @@ Banks banking on AI
         None - this is more of an article, rather than a scientific paper.
 
 ########################################################################################################################
+# 2021
+########################################################################################################################
+
+Advances and Open Problems in Federated Learning
+    What did the authors try to accomplish?
+        In detail explain what the current state of AI related to federated learning is and what problems are to be solved.
+    What were the key elements of the approach?
+        State the current situation + State open problems.
+        Very detailed.
+    What can you use yourself?
+        In case one is curious about federated learning and would like to do research in that field, this paper is a great start.
+        It has a ton of references and gives examples of datasets on which to benchmark models as well as software (Tensorflow Federated, etc).
+    What other references do you want to follow?
+        Since, I'm not particularly interested in the topic, I won't list any here.
+
+########################################################################################################################
 # 2022
 ########################################################################################################################
 
