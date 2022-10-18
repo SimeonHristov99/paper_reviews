@@ -19,6 +19,20 @@ Comparison of Reasoners for large Ontologies in the OWL 2 EL Profile
         the references referring to the reasoners and logic rules
 
 ########################################################################################################################
+# 2014
+########################################################################################################################
+
+Tidy Data 
+    What did the authors try to accomplish?
+        Very important classic and foundational table. Introduces the principles of data tidying.
+    What were the key elements of the approach?
+        Lots of examples on how to tidy a dataset are given. Also a case study at the end.
+    What can you use yourself?
+        structure of tidy datasets: each variable is a column, each observation is a row, and each type of observational unit is a table
+    What other references do you want to follow?
+        This is more of an article, rather than a research paper. It is important by itself.
+
+########################################################################################################################
 # 2020
 ########################################################################################################################
 
