@@ -33,6 +33,21 @@ Tidy Data
         This is more of an article, rather than a research paper. It is important by itself.
 
 ########################################################################################################################
+# 2011
+########################################################################################################################
+
+Understanding Deep Neural Networks with Rectified Linear Units
+    What did the authors try to accomplish?
+        Present an algorithm to train deep neural networks that have ReLU activation functions. Basically, present an algorithm that trains faster.
+    What were the key elements of the approach?
+        A lot of math. Use of theory of zonotopes from polyhedral theory.
+    What can you use yourself?
+        Hard to read paper.
+    What other references do you want to follow?
+        None, as I'm not really interested in this topic.
+
+
+########################################################################################################################
 # 2020
 ########################################################################################################################
 

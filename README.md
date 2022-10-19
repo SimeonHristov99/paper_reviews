@@ -26,6 +26,7 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [Banks banking on AI](https://garph.co.uk/IJARMSS/Sep2020/G-2835.pdf)
 - [X] [Advances and Open Problems in Federated Learning](https://arxiv.org/pdf/1912.04977.pdf)
 - [X] [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
+- [X] [Understanding Deep Neural Networks with Rectified Linear Units](https://arxiv.org/pdf/1611.01491.pdf)
 
 ## Template
 
