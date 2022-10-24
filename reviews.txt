@@ -41,6 +41,24 @@ Comparison of Reasoners for large Ontologies in the OWL 2 EL Profile
     What other references do you want to follow?
         the references referring to the reasoners and logic rules
 
+
+########################################################################################################################
+# 2013
+########################################################################################################################
+
+Efficient Estimation of Word Representations in Vector Space
+    What did the authors try to accomplish?
+        This is the classic paper introducing CBOW and Skip-gram models.
+    What were the key elements of the approach?
+        These are the algorithms that create word2vec.
+    What can you use yourself?
+        The architectures and the ideas are all to be referenced when needed.
+        CBOW: Predict target word from context.
+        Skip-gram: Predict context words from target word.
+    What other references do you want to follow?
+        There is a really nice YouTube video: https://www.youtube.com/watch?v=UqRCEmrv1gQ
+
+
 ########################################################################################################################
 # 2014
 ########################################################################################################################

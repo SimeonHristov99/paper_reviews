@@ -28,6 +28,7 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
 - [X] [Understanding Deep Neural Networks with Rectified Linear Units](https://arxiv.org/pdf/1611.01491.pdf)
 - [X] [Statistical Modeling: The Two Cultures](https://www.jstor.org/stable/2676681?origin=JSTOR-pdf)
+- [X] [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
 
 ## Template
 
