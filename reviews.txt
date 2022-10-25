@@ -73,6 +73,17 @@ Tidy Data
     What other references do you want to follow?
         This is more of an article, rather than a research paper. It is important by itself.
 
+Distributed Representations of Sentences and Documents
+    What did the authors try to accomplish?
+        Introduce a new way for predicting the next word in a sentence - Paragraph Vector.
+    What were the key elements of the approach?
+        It deals with some of the weaknesses of the bag-of-words model - semantics of words and order of words. It looks like the way cbow works, if the word to be predicted was the next word. The only difference is that now we have another input apart from the words - a paragraph id, which stores the context/meaning/story of the specific paragraph.
+    What can you use yourself?
+        Could be used when comparing different models. Useful datasets for common NLP tasks are mentioned.
+    What other references do you want to follow?
+        1, 2
+
+
 ########################################################################################################################
 # 2011
 ########################################################################################################################

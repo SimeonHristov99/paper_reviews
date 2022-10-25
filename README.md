@@ -6,12 +6,7 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 
 ## Coming up
 
-- [ ] [Fast and robust fixed-point algorithms for independent component analysis](https://ieeexplore.ieee.org/document/761722)
-- [ ] [Statistical Modeling: The Two Cultures](https://www.jstor.org/stable/2676681?origin=JSTOR-pdf)
-- [ ] [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
-- [ ] [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
-- [ ] [Distributed Representations of Sentences and Documents](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
-- [ ] [Understanding Deep Neural Networks with Rectified Linear Units](https://arxiv.org/pdf/1611.01491.pdf)
+Papers will be added soon.
 
 ## Reviewed
 
@@ -29,6 +24,7 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [Understanding Deep Neural Networks with Rectified Linear Units](https://arxiv.org/pdf/1611.01491.pdf)
 - [X] [Statistical Modeling: The Two Cultures](https://www.jstor.org/stable/2676681?origin=JSTOR-pdf)
 - [X] [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
+- [X] [Distributed Representations of Sentences and Documents](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
 
 ## Template
 
