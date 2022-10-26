@@ -129,6 +129,7 @@ Banks banking on AI
     What other references do you want to follow?
         None - this is more of an article, rather than a scientific paper.
 
+
 ########################################################################################################################
 # 2021
 ########################################################################################################################
@@ -144,6 +145,19 @@ Advances and Open Problems in Federated Learning
         It has a ton of references and gives examples of datasets on which to benchmark models as well as software (Tensorflow Federated, etc).
     What other references do you want to follow?
         Since, I'm not particularly interested in the topic, I won't list any here.
+
+Towards Self-Explainable Graph Neural Network
+    What did the authors try to accomplish?
+        Create a new Graph Neural Network (GNN) model that can take as input a set of labeled vertices and a set of unlabeled vertices. It can then classify the unlabeled vertices and give the reasons for which it did so. This is a novel approach since there hasn't been a GNN that can simultaneously predict and explain.
+    What were the key elements of the approach?
+        They created a new classification loss.
+        They generate a synthetic dataset, but also test on real world datasets.
+        For similarity they take into account both the structural similarity and the node attribute similarity.
+    What can you use yourself?
+        They say that very little research has been done in the area of GNN that can predict and explain.
+        GNNs have usecases in recommendation systems and credit approval systems. Look into it.
+    What other references do you want to follow?
+        42 (talks about GNNs in recommendation systems)
 
 ########################################################################################################################
 # 2022
