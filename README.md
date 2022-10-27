@@ -26,6 +26,7 @@ Papers will be added soon.
 - [X] [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
 - [X] [Distributed Representations of Sentences and Documents](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
 - [X] [Towards Self-Explainable Graph Neural Network](https://dl.acm.org/doi/10.1145/3459637.3482306)
+- [X] [Fast and robust fixed-point algorithms for independent component analysis](https://ieeexplore.ieee.org/document/761722)
 
 ## Template
 
