@@ -99,7 +99,7 @@ Distributed Representations of Sentences and Documents
 
 
 ########################################################################################################################
-# 2011
+# 2018
 ########################################################################################################################
 
 Understanding Deep Neural Networks with Rectified Linear Units
@@ -255,3 +255,16 @@ ESTA: An Esports Trajectory and Action Dataset
             - real-world data analysis
     What other references do you want to follow?
         Research more about online learning. Also: 1, 2, 3, 8, 10, 12, 17
+
+Ask Me Anything: A simple strategy for prompting language models
+    What did the authors try to accomplish?
+        Construct new procedures by which a language model can improve its question-answering accuracy.
+    What were the key elements of the approach?
+        They transform each restrictive question into an open-ended one.
+        They use prompt chaining in order to get a number of answers which will then by aggregated.
+        They use WS (weak supervision) instead of majority vote when aggregating answers.
+    What can you use yourself?
+        These are useful tips if working on a question-answering task.
+    What other references do you want to follow?
+        None, since not interested in the topic.
+

@@ -6,7 +6,14 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 
 ## Coming up
 
-Papers will be added soon.
+- [ ] [Fine-grained Classification of Solder Joints with alpha-skew Jensen-Shannon Divergence](http://arxiv.org/abs/2209.09857)
+- [ ] [Improving GANs with A Dynamic Discriminator](http://arxiv.org/abs/2209.09897)
+- [ ] [Knowledge-aware Graph Neural Networks with Label Smoothness Regularization for Recommender Systems](http://arxiv.org/abs/1905.04413)
+- [ ] [Learning Transferable Visual Models From Natural Language Supervision](http://arxiv.org/abs/2103.00020)
+- [ ] [OAK4XAI: Model towards Out-Of-Box eXplainable Artificial Intelligence for Digital Agriculture](http://arxiv.org/abs/2209.15104)
+- [ ] [Rethinking Data Augmentation in Knowledge Distillation for Object Detection](http://arxiv.org/abs/2209.09841)
+- [ ] [TalkToModel: Explaining Machine Learning Models with Interactive Natural Language Conversations](http://arxiv.org/abs/2207.04154)
+- [ ] [X-Risk Analysis for AI Research](http://arxiv.org/abs/2206.05862)
 
 ## Reviewed
 
@@ -27,6 +34,7 @@ Papers will be added soon.
 - [X] [Distributed Representations of Sentences and Documents](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
 - [X] [Towards Self-Explainable Graph Neural Network](https://dl.acm.org/doi/10.1145/3459637.3482306)
 - [X] [Fast and robust fixed-point algorithms for independent component analysis](https://ieeexplore.ieee.org/document/761722)
+- [X] [Ask Me Anything: A simple strategy for prompting language models](http://arxiv.org/abs/2210.02441)
 
 ## Template
 
