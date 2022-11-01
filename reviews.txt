@@ -195,7 +195,7 @@ Pen & Paper Exercises in Machine Learning
 
 How to play any mental game or A Completeness Theorem for Protocols with Honest Majority
     What did the authors try to accomplish?
-        Lengthy paper in which the authors lay out a protocol for simulating the trusted party of an ideal game. That is, if more than half of the players follow the protocol, whatever a player (or a set of players of size less than n/2) knows at any step of the game, he would have also known in an idea execution of the game with a trusted party.
+        Lengthy paper in which the authors lay out a protocol for simulating the trusted party of an ideal game. That is, if more than half of the players follow the protocol, whatever a player (or a set of players of size less than n/2) knows at any step of the game, he would have also known in an ideal execution of the game with a trusted party.
     What were the key elements of the approach?
         Related to cryptography and game theory.
         The knowledge constraints are satisfied in a computational complexity sense. Namely, any player in order to compute anything more than his due share of current state, should perform an exponential-time computation.
@@ -267,4 +267,17 @@ Ask Me Anything: A simple strategy for prompting language models
         These are useful tips if working on a question-answering task.
     What other references do you want to follow?
         None, since not interested in the topic.
+
+Computational Sarcasm Analysis on Social Media: A Systematic Review
+    What did the authors try to accomplish?
+        Describe the various methods used to perform sarcasm detection along with plenty of alternatives.
+    What were the key elements of the approach?
+        They used only English text.
+        Only texts from social media. In particular, mainly tweets and reddit posts.
+    What can you use yourself?
+        They list various ways to extract features from texts.
+        They list various models. One can use them as a way to improve SemEval scores. At one point they talk about DESC - an ensamble model that beat even neural networks in SemEval.
+        Serves as a really good example on how to perform systematic reviews. Maybe look into more such papers.
+    What other references do you want to follow?
+        There are a lot of them. For now none, since this would depend on which part one is interested it.
 

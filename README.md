@@ -35,6 +35,7 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [Towards Self-Explainable Graph Neural Network](https://dl.acm.org/doi/10.1145/3459637.3482306)
 - [X] [Fast and robust fixed-point algorithms for independent component analysis](https://ieeexplore.ieee.org/document/761722)
 - [X] [Ask Me Anything: A simple strategy for prompting language models](http://arxiv.org/abs/2210.02441)
+- [X] [Computational Sarcasm Analysis on Social Media: A Systematic Review](http://arxiv.org/abs/2209.06170)
 
 ## Template
 
