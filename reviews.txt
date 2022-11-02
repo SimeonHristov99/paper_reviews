@@ -281,3 +281,14 @@ Computational Sarcasm Analysis on Social Media: A Systematic Review
     What other references do you want to follow?
         There are a lot of them. For now none, since this would depend on which part one is interested it.
 
+Deep Generalized Schrodinger Bridge
+    What did the authors try to accomplish?
+        Propose a new framework for solving a problem in Game Theory.
+    What were the key elements of the approach?
+        They combined Schrodinger Bridge with Deep RL.
+    What can you use yourself?
+        This is very match heavy - numeric optimization, differential equations, game theory, operations research, etc.
+        Understanding the math behind it will definitely help anyone.
+    What other references do you want to follow?
+        None, since not interested.
+
