@@ -292,3 +292,13 @@ Deep Generalized Schrodinger Bridge
     What other references do you want to follow?
         None, since not interested.
 
+Extremely Simple Activation Shaping for Out-of-Distribution Detection
+    What did the authors try to accomplish?
+        Develop a new neural network layer, called ASH, that allows for post-hod, real-time improvement of image classification.
+        Specifically, it helps the neural network in recognizing out-of-distribution (OOD) samples.
+    What were the key elements of the approach?
+        They pruned activation values from penultimate layers.
+    What can you use yourself?
+        This trick is similar to RELU. Can be used in projects to check whether it will improve model's performance on OOD samples.
+    What other references do you want to follow?
+        14, 23, 32, 42, 43
