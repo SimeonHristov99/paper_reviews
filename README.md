@@ -38,6 +38,7 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [Computational Sarcasm Analysis on Social Media: A Systematic Review](http://arxiv.org/abs/2209.06170)
 - [X] [Deep Generalized Schrodinger Bridge](http://arxiv.org/abs/2209.09893)
 - [X] [Extremely Simple Activation Shaping for Out-of-Distribution Detection](http://arxiv.org/abs/2209.09858)
+- [X] [Federated Machine Learning: Concept and Applications](http://arxiv.org/abs/1902.04885)
 
 ## Template
 

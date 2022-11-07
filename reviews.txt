@@ -114,6 +114,21 @@ Understanding Deep Neural Networks with Rectified Linear Units
 
 
 ########################################################################################################################
+# 2019
+########################################################################################################################
+
+Federated Machine Learning: Concept and Applications
+    What did the authors try to accomplish?
+        Describe the main ideas and challenges (mostly related to data privacy) of federated learning.
+    What were the key elements of the approach?
+        Seems like a literature review of existing approaches.
+        Describe various architectures (horizontal FL, vertical FL, etc)
+    What can you use yourself?
+        This is a good starting point into the world of FL.
+    What other references do you want to follow?
+        these three papers are from Google when they introduced FL: 36, 37, 41
+
+########################################################################################################################
 # 2020
 ########################################################################################################################
 
