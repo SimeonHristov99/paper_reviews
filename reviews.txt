@@ -317,3 +317,17 @@ Extremely Simple Activation Shaping for Out-of-Distribution Detection
         This trick is similar to RELU. Can be used in projects to check whether it will improve model's performance on OOD samples.
     What other references do you want to follow?
         14, 23, 32, 42, 43
+
+Fine-grained Classification of Solder Joints with alpha-skew Jensen-Shannon Divergence
+    What did the authors try to accomplish?
+        Present a pipeline for solder joint classification in two classes: good and bad.
+    What were the key elements of the approach?
+        They use crossentropy with an additional penalty: α-skew Jensen-Shannon divergence.
+        The aim is to maximize the entropy, which in this case means pushing the distribution closer to uniform.
+    What can you use yourself?
+        They really well document their setup. Good to use as a template.
+        The α-skew Jensen-Shannon divergence is used as a way to mitigate overfitting when there is a high class imbalance.
+        Apparently You Only Look at Coefficients (YOLACT) is a thing - it's used for instance segmentation.
+    What other references do you want to follow?
+        None for now.
+

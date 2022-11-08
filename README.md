@@ -39,6 +39,7 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [Deep Generalized Schrodinger Bridge](http://arxiv.org/abs/2209.09893)
 - [X] [Extremely Simple Activation Shaping for Out-of-Distribution Detection](http://arxiv.org/abs/2209.09858)
 - [X] [Federated Machine Learning: Concept and Applications](http://arxiv.org/abs/1902.04885)
+- [X] [Fine-grained Classification of Shoulder Joints with alpha-skew Jensen-Shannon Divergence](http://arxiv.org/abs/2209.09857)
 
 ## Template
 
