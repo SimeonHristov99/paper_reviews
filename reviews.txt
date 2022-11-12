@@ -128,6 +128,17 @@ Federated Machine Learning: Concept and Applications
     What other references do you want to follow?
         these three papers are from Google when they introduced FL: 36, 37, 41
 
+Knowledge-aware Graph Neural Networks with Label Smoothness Regularization for Recommender Systems
+    What did the authors try to accomplish?
+        Provide a new type of framework that does better predictions.
+    What were the key elements of the approach?
+        They used weighted edges and label smoothing.
+        This is very math heavy.
+    What can you use yourself?
+        Can be used as an introduction into the way KGNNs work.
+    What other references do you want to follow?
+        None for now.
+
 ########################################################################################################################
 # 2020
 ########################################################################################################################

@@ -41,6 +41,7 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [Federated Machine Learning: Concept and Applications](http://arxiv.org/abs/1902.04885)
 - [X] [Fine-grained Classification of Shoulder Joints with alpha-skew Jensen-Shannon Divergence](http://arxiv.org/abs/2209.09857)
 - [X] [Improving GANs with A Dynamic Discriminator](http://arxiv.org/abs/2209.09897)
+- [X] [Knowledge-aware Graph Neural Networks with Label Smoothness Regularization for Recommender Systems](http://arxiv.org/abs/1905.04413)
 
 ## Template
 
