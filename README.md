@@ -6,10 +6,6 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 
 ## Coming up
 
-- [ ] [Fine-grained Classification of Solder Joints with alpha-skew Jensen-Shannon Divergence](http://arxiv.org/abs/2209.09857)
-- [ ] [Improving GANs with A Dynamic Discriminator](http://arxiv.org/abs/2209.09897)
-- [ ] [Knowledge-aware Graph Neural Networks with Label Smoothness Regularization for Recommender Systems](http://arxiv.org/abs/1905.04413)
-- [ ] [Learning Transferable Visual Models From Natural Language Supervision](http://arxiv.org/abs/2103.00020)
 - [ ] [OAK4XAI: Model towards Out-Of-Box eXplainable Artificial Intelligence for Digital Agriculture](http://arxiv.org/abs/2209.15104)
 - [ ] [Rethinking Data Augmentation in Knowledge Distillation for Object Detection](http://arxiv.org/abs/2209.09841)
 - [ ] [TalkToModel: Explaining Machine Learning Models with Interactive Natural Language Conversations](http://arxiv.org/abs/2207.04154)
@@ -42,6 +38,7 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [Fine-grained Classification of Shoulder Joints with alpha-skew Jensen-Shannon Divergence](http://arxiv.org/abs/2209.09857)
 - [X] [Improving GANs with A Dynamic Discriminator](http://arxiv.org/abs/2209.09897)
 - [X] [Knowledge-aware Graph Neural Networks with Label Smoothness Regularization for Recommender Systems](http://arxiv.org/abs/1905.04413)
+- [X] [Learning Transferable Visual Models From Natural Language Supervision](http://arxiv.org/abs/2103.00020)
 
 ## Template
 

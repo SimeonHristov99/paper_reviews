@@ -199,6 +199,22 @@ Towards Self-Explainable Graph Neural Network
     What other references do you want to follow?
         42 (talks about GNNs in recommendation systems)
 
+Learning Transferable Visual Models From Natural Language Supervision
+    What did the authors try to accomplish?
+        This is from OpenAI and is the paper introducing CLIP.
+    What were the key elements of the approach?
+        They scrape image-text pairs from the Internet.
+        They use contrastive learning.
+        They pass a batch of images through an encoder to get a feature vector.
+        They pass a corresponding batch holding the text of the image through another encoder to get its feature vector.
+        They combine these in a matrix and train the model to maximize the inner product on the diagonal.
+        The result is an image that can do zero-short classification tasks with SOTA performance providing not only the label, but also a context.
+    What can you use yourself?
+        Very lengthy paper. This is the best of the best and should be used as a guide when writing papers.
+    What other references do you want to follow?
+        None for now.
+
+
 ########################################################################################################################
 # 2022
 ########################################################################################################################
