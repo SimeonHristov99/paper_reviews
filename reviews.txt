@@ -39,6 +39,28 @@ Statistical Modeling: The Two Cultures
 # 2011
 ########################################################################################################################
 
+Morphological Reconstruction From Digital Image Processing Using MATLAB
+    What did the authors try to accomplish?
+        Introduce the topic of morphological reconstruction.
+    What were the key elements of the approach?
+        They put code snippets of MATLAB and it seems like they use an Image Processing Toolbox.
+        Works on binary images.
+    What can you use yourself?
+        Section 10.5 are perfect for the first slides of a presentation.
+        MR can be used to:
+            - extract marked objects;
+            - find bright regions surrounded by dark pixels
+            - detect or remove objects touching the image border;
+            - detect or fill in object holes;
+            - filter out spurious high or low points.
+    What other references do you want to follow?
+        None, since not exactly a paper, but more of an article.
+
+
+########################################################################################################################
+# 2011
+########################################################################################################################
+
 Comparison of Reasoners for large Ontologies in the OWL 2 EL Profile
     What did the authors try to accomplish?
         List characteristics by which to compare a set of reasoners for large ontologies.
