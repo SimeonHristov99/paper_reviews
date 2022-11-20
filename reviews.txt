@@ -1,4 +1,19 @@
 ########################################################################################################################
+# 1994
+########################################################################################################################
+
+Authorship attribution
+    What did the authors try to accomplish?
+        Discuss various (statistical) ways / metrics for attributing text.
+    What were the key elements of the approach?
+        First, discuss present different metrics, then show a case study.
+    What can you use yourself?
+        These metrics can be implemented in a project and could be used for features to be passed to a model.
+    What other references do you want to follow?
+        None, because this work is quite old, but this paper could be used as the seed to read the papers who cite it.
+
+
+########################################################################################################################
 # 1999
 ########################################################################################################################
 

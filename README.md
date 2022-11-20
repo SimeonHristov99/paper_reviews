@@ -40,6 +40,7 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [Knowledge-aware Graph Neural Networks with Label Smoothness Regularization for Recommender Systems](http://arxiv.org/abs/1905.04413)
 - [X] [Learning Transferable Visual Models From Natural Language Supervision](http://arxiv.org/abs/2103.00020)
 - [X] [Morphological Reconstruction From Digital Image Processing Using MATLAB](https://fr.mathworks.com/content/dam/mathworks/tag-team/Objects/m/64199_91822v00_eddins_final.pdf)
+- [X] [Authorship attribution](https://link.springer.com/article/10.1007/BF01830689)
 
 ## Template
 
