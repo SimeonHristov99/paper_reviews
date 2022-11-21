@@ -27,6 +27,22 @@ Fast and robust fixed-point algorithms for independent component analysis
     What other references do you want to follow?
         None, since not interested in the topic.
 
+Automatic Authorship Attribution
+    What did the authors try to accomplish?
+        Present a way to classify documents without any preprocessing or manual transformations.
+    What were the key elements of the approach?
+        They used a readily-available system called Sentence and Chunk Boundaries Detector (SCBD).
+            It extracts a total of 22 style markers.
+        They used Greek language.
+        They used multiple linear regression on these 22 style markers.
+    What can you use yourself?
+        They say that not many texts are needed for authorship attribution (they use 10 and a soft limit of 1000).
+        It seems that the goal is to work and model style features / vocabulary richness functions and not text (but those have to be extracted somehow).
+            Some of those features are: hapax legomena, hapax dislegomena, type-token ratio, Yule's K, Honore's R.
+    What other references do you want to follow?
+        Homes 1994, Holmes and Forsyth, 1994, Burrows 1987, Burrows 1992
+
+
 ########################################################################################################################
 # 2001
 ########################################################################################################################
