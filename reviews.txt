@@ -267,6 +267,24 @@ Learning Transferable Visual Models From Natural Language Supervision
     What other references do you want to follow?
         None for now.
 
+Multi-label Style Change Detection by Solving a Binary Classification Problem
+    What did the authors try to accomplish?
+        Present a way to determine whether a document is written by multiple authors and attribute paragraphs to authors.
+        This is a paper for PAN at CLEF 2021.
+    What were the key elements of the approach?
+        Pytorch!
+        They used ensamble methods.
+        They use another paper to extract specific features - Iyer and Vosoughi [12] and Zuo et al. [13].
+            A lot of the features are potentially available only for the English language.
+        They features are extracted both on the paragraph as well as on the whole-text level.
+        They use a pretrained BERT model to get embeddings.
+    What can you use yourself?
+        The whole process is very detailed and well explained. Could serve as a template.
+        Note that this is for paragraph-level authorship attribution.
+        The features from [12] and [13] could be of use - try to see if you can also extract at least or two of them.
+        If BERT can be used to get embeddings for Bulgarian, it could be better than using tf-idf. Could compare them.
+    What other references do you want to follow?
+        11, 12, 13, 17 (optuna!), 2, 3, 7
 
 ########################################################################################################################
 # 2022
