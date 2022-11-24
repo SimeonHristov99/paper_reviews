@@ -286,6 +286,29 @@ Multi-label Style Change Detection by Solving a Binary Classification Problem
     What other references do you want to follow?
         11, 12, 13, 17 (optuna!), 2, 3, 7
 
+Style Change Detection on Real-World Data using an LSTM-powered Attribution Algorithm
+    What did the authors try to accomplish?
+        Complete three tasks:
+            1. Determine whether a document is single or multi-authored.
+            2. Determine whether a Style Change occurs between paragraphs.
+            3. Assign each paragraph to one author.
+    What were the key elements of the approach?
+        For the first task they used per-document embeddings and an MLP.
+        For the second task they used per-paragraph embeddings and textual features for an LSTM.
+        For the third task they used a hybrid method building upon task 2 and extended by an attribution algorithm.
+        An interesting note: averaging word embeddings of all words in a text has proven to be a surprisingly successful and efficient way of obtaining features across a multitude of tasks.
+    What can you use yourself?
+        Note that this is another paper from PAN at CLEF 2021.
+        Definitely try out the technique with taking the average of the word embeddings.
+        If considering doing Authorship Attribution on a document level
+            - the discussed methods here could be tried;
+            - very detailed and well written explanations - could serve as a template;
+        Look at what textual features they extract - maybe they could be used for any NLP task.
+        What if you make one model based on the embeddings, and another using textual features, and then fuse them in a meta-model or by using a voting classifier?
+    What other references do you want to follow?
+        8, 9 (seems releval for single document AA), 10, 11, 12, 13, 15 (features), 18 (look into fastText)
+
+
 ########################################################################################################################
 # 2022
 ########################################################################################################################

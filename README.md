@@ -43,6 +43,7 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [Authorship attribution](https://link.springer.com/article/10.1007/BF01830689)
 - [X] [Automatic Authorship Attribution](http://portal.acm.org/citation.cfm?doid=977035.977057)
 - [X] [Multi-label Style Change Detection by Solving a Binary Classification Problem](https://ceur-ws.org/Vol-2936/paper-191.pdf)
+- [X] [Style Change Detection on Real-World Data using an LSTM-powered Attribution Algorithm](https://ceur-ws.org/Vol-2936/paper-163.pdf)
 
 ## Template
 
