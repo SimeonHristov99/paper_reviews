@@ -87,11 +87,6 @@ Morphological Reconstruction From Digital Image Processing Using MATLAB
     What other references do you want to follow?
         None, since not exactly a paper, but more of an article.
 
-
-########################################################################################################################
-# 2011
-########################################################################################################################
-
 Comparison of Reasoners for large Ontologies in the OWL 2 EL Profile
     What did the authors try to accomplish?
         List characteristics by which to compare a set of reasoners for large ontologies.
@@ -222,6 +217,19 @@ Banks banking on AI
     What other references do you want to follow?
         None - this is more of an article, rather than a scientific paper.
 
+CAG: Stylometric Authorship Attribution of Multi-Author Documents Using a Co-Authorship Graph
+    What did the authors try to accomplish?
+        Construct a framework for producing labels for multi-author documents.
+    What were the key elements of the approach?
+        For each document by using a sliding window they extract 1000 tokens. They call this a data point.
+        They use 3, 4, 5 n-grams compute their tf-idf and store only the top 1000 results.
+        For every data point they construct a graph with edges between the knn.
+    What can you use yourself?
+        They used 56 features! All of them are in a table in section 6. Should be useful for any type of NLP task.
+        They also formally defined the task of authorship identification of single-author documents (AISD) and authorship identification of multi-author documents (AIMD). This can be used if making a presentation.
+    What other references do you want to follow?
+        From 1 to 13 (they are all related to AISD)
+
 
 ########################################################################################################################
 # 2021
@@ -306,7 +314,7 @@ Style Change Detection on Real-World Data using an LSTM-powered Attribution Algo
         Look at what textual features they extract - maybe they could be used for any NLP task.
         What if you make one model based on the embeddings, and another using textual features, and then fuse them in a meta-model or by using a voting classifier?
     What other references do you want to follow?
-        8, 9 (seems releval for single document AA), 10, 11, 12, 13, 15 (features), 18 (look into fastText)
+        8, 9, 10, 11, 12, 13, 15 (features), 18 (look into fastText)
 
 
 ########################################################################################################################
