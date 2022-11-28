@@ -45,6 +45,7 @@ Currently all reviews can be found in the `reviews.txt` file. They are sorted by
 - [X] [Multi-label Style Change Detection by Solving a Binary Classification Problem](https://ceur-ws.org/Vol-2936/paper-191.pdf)
 - [X] [Style Change Detection on Real-World Data using an LSTM-powered Attribution Algorithm](https://ceur-ws.org/Vol-2936/paper-163.pdf)
 - [X] [CAG: Stylometric Authorship Attribution of Multi-Author Documents Using a Co-Authorship Graph](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8962080)
+- [X] [Quantitative Authorship Attribution: An Evaluation of Techniques](https://lirias.kuleuven.be/bitstream/123456789/331335/1/Grieve%20-%20authorship%20attribution.pdf)
 
 ## Template
 

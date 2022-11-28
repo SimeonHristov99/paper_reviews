@@ -67,6 +67,22 @@ Statistical Modeling: The Two Cultures
 
 
 ########################################################################################################################
+# 2007
+########################################################################################################################
+
+Quantitative Authorship Attribution: An Evaluation of Techniques
+    What did the authors try to accomplish?
+        Compare 39 different style markers in order to order them based on predictive power.
+        Note that here we're not talking about using the text as features, but extracting and forming features/calculations/coefficients from the text.
+    What were the key elements of the approach?
+        He notes that compiling the corpus is of crucial importance. It has to feature texts that show the author's style, but when all texts are combined they must also continue to represent different styles.
+    What can you use yourself?
+        The features are detailed and explained. They can be used in NLP tasks.
+        I was surprised that "Word and punctuation mark profile" turned out to be the best predictor. Definitely try it out.
+    What other references do you want to follow?
+        None for now.
+
+########################################################################################################################
 # 2011
 ########################################################################################################################
 
