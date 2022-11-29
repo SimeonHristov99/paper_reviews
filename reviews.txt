@@ -82,6 +82,23 @@ Quantitative Authorship Attribution: An Evaluation of Techniques
     What other references do you want to follow?
         None for now.
 
+
+########################################################################################################################
+# 2009
+########################################################################################################################
+
+A Survey of Modern Authorship Attribution Methods
+    What did the authors try to accomplish?
+        Discuss the pros and cons of using many different style markers and NLP techniques to do authorship attribution.
+    What were the key elements of the approach?
+        Discusses mainly new techniques.
+        Also provides analysis of various classifiers such as SVM.
+    What can you use yourself?
+        Read in more detail if planning to perform single-author attribution - it'll give a lot of information which can be used to choose the best features and algorithms.
+    What other references do you want to follow?
+        None for now - some of them have already been reviewed or will be reviewed in the nearby future.
+
+
 ########################################################################################################################
 # 2011
 ########################################################################################################################
