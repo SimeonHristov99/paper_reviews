@@ -1,0 +1,501 @@
+# Paper and Article reviews
+
+- [Paper and Article reviews](#paper-and-article-reviews)
+  - [Activation functions in neural networks](#activation-functions-in-neural-networks)
+  - [Authorship attribution](#authorship-attribution)
+  - [Banks and AI](#banks-and-ai)
+  - [Datasets](#datasets)
+  - [Digital Image Processing](#digital-image-processing)
+  - [Federated Machine Learning](#federated-machine-learning)
+  - [Game Theory](#game-theory)
+  - [Generative Adversarial Networks](#generative-adversarial-networks)
+  - [Graph Neural Networks](#graph-neural-networks)
+  - [Image classification](#image-classification)
+  - [Image generation](#image-generation)
+  - [Image segmentation](#image-segmentation)
+  - [Math](#math)
+  - [Ontologies](#ontologies)
+  - [Question-Answering](#question-answering)
+  - [Sarcasm Detection](#sarcasm-detection)
+  - [Statistics](#statistics)
+  - [Word Representations in Vector Space](#word-representations-in-vector-space)
+
+## Activation functions in neural networks
+
+Understanding Deep Neural Networks with Rectified Linear Units
+    What did the authors try to accomplish?
+        Present an algorithm to train deep neural networks that have ReLU activation functions. Basically, present an algorithm that trains faster.
+    What were the key elements of the approach?
+        A lot of math. Use of theory of zonotopes from polyhedral theory.
+    What can you use yourself?
+        Hard to read paper.
+    What other references do you want to follow?
+        None for now.
+
+## Authorship attribution
+
+- Authorship attribution
+    What did the authors try to accomplish?
+        Discuss various (statistical) ways / metrics for attributing text.
+    What were the key elements of the approach?
+        First, discuss present different metrics, then show a case study.
+    What can you use yourself?
+        These metrics can be implemented in a project and could be used for features to be passed to a model.
+    What other references do you want to follow?
+        None, because this work is quite old, but this paper could be used as the seed to read the papers who cite it.
+
+Automatic Authorship Attribution
+    What did the authors try to accomplish?
+        Present a way to classify documents without any preprocessing or manual transformations.
+    What were the key elements of the approach?
+        They used a readily-available system called Sentence and Chunk Boundaries Detector (SCBD).
+            It extracts a total of 22 style markers.
+        They used Greek language.
+        They used multiple linear regression on these 22 style markers.
+    What can you use yourself?
+        They say that not many texts are needed for authorship attribution (they use 10 and a soft limit of 1000).
+        It seems that the goal is to work and model style features / vocabulary richness functions and not text (but those have to be extracted somehow).
+            Some of those features are: hapax legomena, hapax dislegomena, type-token ratio, Yule's K, Honore's R.
+    What other references do you want to follow?
+        Homes 1994, Holmes and Forsyth, 1994, Burrows 1987, Burrows 1992
+
+Quantitative Authorship Attribution: An Evaluation of Techniques
+    What did the authors try to accomplish?
+        Compare 39 different style markers in order to order them based on predictive power.
+        Note that here we're not talking about using the text as features, but extracting and forming features/calculations/coefficients from the text.
+    What were the key elements of the approach?
+        He notes that compiling the corpus is of crucial importance. It has to feature texts that show the author's style, but when all texts are combined they must also continue to represent different styles.
+    What can you use yourself?
+        The features are detailed and explained. They can be used in NLP tasks.
+        I was surprised that "Word and punctuation mark profile" turned out to be the best predictor. Definitely try it out.
+    What other references do you want to follow?
+        None for now.
+
+A Survey of Modern Authorship Attribution Methods
+    What did the authors try to accomplish?
+        Discuss the pros and cons of using many different style markers and NLP techniques to do authorship attribution.
+    What were the key elements of the approach?
+        Discusses mainly new techniques.
+        Also provides analysis of various classifiers such as SVM.
+    What can you use yourself?
+        Read in more detail if planning to perform single-author attribution - it'll give a lot of information which can be used to choose the best features and algorithms.
+    What other references do you want to follow?
+        None for now - some of them have already been reviewed or will be reviewed in the nearby future.
+
+CAG: Stylometric Authorship Attribution of Multi-Author Documents Using a Co-Authorship Graph
+    What did the authors try to accomplish?
+        Construct a framework for producing labels for multi-author documents.
+    What were the key elements of the approach?
+        For each document by using a sliding window they extract 1000 tokens. They call this a data point.
+        They use 3, 4, 5 n-grams compute their tf-idf and store only the top 1000 results.
+        For every data point they construct a graph with edges between the knn.
+    What can you use yourself?
+        They used 56 features! All of them are in a table in section 6. Should be useful for any type of NLP task.
+        They also formally defined the task of authorship identification of single-author documents (AISD) and authorship identification of multi-author documents (AIMD). This can be used if making a presentation.
+    What other references do you want to follow?
+        From 1 to 13 (they are all related to AISD)
+
+Multi-label Style Change Detection by Solving a Binary Classification Problem
+    What did the authors try to accomplish?
+        Present a way to determine whether a document is written by multiple authors and attribute paragraphs to authors.
+        This is a paper for PAN at CLEF 2021.
+    What were the key elements of the approach?
+        Pytorch!
+        They used ensamble methods.
+        They use another paper to extract specific features - Iyer and Vosoughi [12] and Zuo et al. [13].
+            A lot of the features are potentially available only for the English language.
+        They features are extracted both on the paragraph as well as on the whole-text level.
+        They use a pretrained BERT model to get embeddings.
+    What can you use yourself?
+        The whole process is very detailed and well explained. Could serve as a template.
+        Note that this is for paragraph-level authorship attribution.
+        The features from [12] and [13] could be of use - try to see if you can also extract at least or two of them.
+        If BERT can be used to get embeddings for Bulgarian, it could be better than using tf-idf. Could compare them.
+    What other references do you want to follow?
+        11, 12, 13, 17 (optuna!), 2, 3, 7
+
+Style Change Detection on Real-World Data using an LSTM-powered Attribution Algorithm
+    What did the authors try to accomplish?
+        Complete three tasks:
+            1. Determine whether a document is single or multi-authored.
+            2. Determine whether a Style Change occurs between paragraphs.
+            3. Assign each paragraph to one author.
+    What were the key elements of the approach?
+        For the first task they used per-document embeddings and an MLP.
+        For the second task they used per-paragraph embeddings and textual features for an LSTM.
+        For the third task they used a hybrid method building upon task 2 and extended by an attribution algorithm.
+        An interesting note: averaging word embeddings of all words in a text has proven to be a surprisingly successful and efficient way of obtaining features across a multitude of tasks.
+    What can you use yourself?
+        Note that this is another paper from PAN at CLEF 2021.
+        Definitely try out the technique with taking the average of the word embeddings.
+        If considering doing Authorship Attribution on a document level
+            - the discussed methods here could be tried;
+            - very detailed and well written explanations - could serve as a template;
+        Look at what textual features they extract - maybe they could be used for any NLP task.
+        What if you make one model based on the embeddings, and another using textual features, and then fuse them in a meta-model or by using a voting classifier?
+    What other references do you want to follow?
+        8, 9, 10, 11, 12, 13, 15 (features), 18 (look into fastText)
+
+## Banks and AI
+
+AI-bank of the future: Can banks meet the AI challenge?
+    What did the authors try to accomplish?
+        Present a methodology / blueprint / changes that need to happen in order for banks to integrate AI at scale in order to remain relevant.
+    What were the key elements of the approach?
+        They list the challenges and benefits of using AI, going cloud, etc. Show how to overcome the challenges.
+        They describe in detail what the changes will bring and how to think about them.
+    What can you use yourself?
+        The main take is the Exhibit 6 in which they show how a bank would need to make internal changes and also section 4 (How can banks transform to become AI-first?).
+        There they describe what each layer of changes is and how it will affect the bank.
+        It doesn't have a lot of case studies. It is more broad and abstract rather than specific.
+    What other references do you want to follow?
+        No references listed, but one could research some of the ideas in the article, for example, using facial expression evaluation in order to grant loan / approve transaction.
+
+Banks banking on AI
+    What did the authors try to accomplish?
+        Outline the current trends in banking not only with abstract/general statements but also with several short case-studies.
+    What were the key elements of the approach?
+        They describe what the problems in AI for banks are.
+        They also describe in what areas AI should be applied (customer service, customer engagement, chatbots, fraud management, etc).
+        They case-studies really help to see the current practical aspects of AI in banks.
+    What can you use yourself?
+        It seems like chatbots (and thus NLP) are the most wide spread form of AI in the banking sector.
+        The area is which AI is applied as well as the case-studies can be used to generate ideas.
+    What other references do you want to follow?
+        None - this is more of an article, rather than a scientific paper.
+
+## Datasets
+
+ESTA: An Esports Trajectory and Action Dataset
+    What did the authors try to accomplish?
+        They created an open-source Python package that can collect data about and visualize CSGO matches using this data.
+        They named the dataset ESTA and it is the most granular dataset for CSGO data.
+        They also benchmarked several models on the task of "win probability" predictions. It seems that MLP was the best.
+    What were the key elements of the approach?
+        They used data from online games.
+        Apart from log loss they also used expected calibration error (ECE) which is a popular metric for win probability models.
+    What can you use yourself?
+        For research and project ideas the most important section is 6 (Concluding Remarks) as they show how this dataset could be used for other purposes, such as:
+            - Trajectory prediction
+            - online learning
+            - temporal and spatial projects
+            - real-world data analysis
+    What other references do you want to follow?
+        Research more about online learning. Also: 1, 2, 3, 8, 10, 12, 17
+
+## Digital Image Processing
+
+Morphological Reconstruction From Digital Image Processing Using MATLAB
+    What did the authors try to accomplish?
+        Introduce the topic of morphological reconstruction.
+    What were the key elements of the approach?
+        They put code snippets of MATLAB and it seems like they use an Image Processing Toolbox.
+        Works on binary images.
+    What can you use yourself?
+        Section 10.5 are perfect for the first slides of a presentation.
+        MR can be used to:
+            - extract marked objects;
+            - find bright regions surrounded by dark pixels
+            - detect or remove objects touching the image border;
+            - detect or fill in object holes;
+            - filter out spurious high or low points.
+    What other references do you want to follow?
+        None, since not exactly a paper, but more of an article.
+
+## Federated Machine Learning
+
+Federated Machine Learning: Concept and Applications
+    What did the authors try to accomplish?
+        Describe the main ideas and challenges (mostly related to data privacy) of federated learning.
+    What were the key elements of the approach?
+        Seems like a literature review of existing approaches.
+        Describe various architectures (horizontal FL, vertical FL, etc)
+    What can you use yourself?
+        This is a good starting point into the world of FL.
+    What other references do you want to follow?
+        these three papers are from Google when they introduced FL: 36, 37, 41
+
+Advances and Open Problems in Federated Learning
+    What did the authors try to accomplish?
+        In detail explain what the current state of AI related to federated learning is and what problems are to be solved.
+    What were the key elements of the approach?
+        State the current situation + State open problems.
+        Very detailed.
+    What can you use yourself?
+        In case one is curious about federated learning and would like to do research in that field, this paper is a great start.
+        It has a ton of references and gives examples of datasets on which to benchmark models as well as software (Tensorflow Federated, etc).
+    What other references do you want to follow?
+        Since, I'm not particularly interested in the topic, I won't list any here.
+
+## Game Theory
+
+Deep Generalized Schrodinger Bridge
+    What did the authors try to accomplish?
+        Propose a new framework for solving a problem in Game Theory.
+    What were the key elements of the approach?
+        They combined Schrodinger Bridge with Deep RL.
+    What can you use yourself?
+        This is very match heavy - numeric optimization, differential equations, game theory, operations research, etc.
+        Understanding the math behind it will definitely help anyone.
+    What other references do you want to follow?
+        None, since not interested.
+
+## Generative Adversarial Networks
+
+Improving GANs with A Dynamic Discriminator
+    What did the authors try to accomplish?
+        When training GANs the results generated by the generator vary and progressively get more challenging for the discriminator.
+        It is not fair to keep the discriminator "on one level of development". This paper shows how to deal with this problem.
+    What were the key elements of the approach?
+        If data is low, the task becomes hard and the discriminator overfits, thus as training goes on, random neurons are removed.
+        If data is low, the task becomes easy and the discriminator underfits, thus as training goes on, random neurons are added.
+    What can you use yourself?
+        They use a metric I haven't heard about (they state it's popular in literature): "Fréchet Inception Distance (FID) serves as the quantitative metric, which could reflect the human perception to some extent."
+    What other references do you want to follow?
+        21
+
+## Graph Neural Networks
+
+Knowledge-aware Graph Neural Networks with Label Smoothness Regularization for Recommender Systems
+    What did the authors try to accomplish?
+        Provide a new type of framework that does better predictions.
+    What were the key elements of the approach?
+        They used weighted edges and label smoothing.
+        This is very math heavy.
+    What can you use yourself?
+        Can be used as an introduction into the way KGNNs work.
+    What other references do you want to follow?
+        None for now.
+
+Towards Self-Explainable Graph Neural Network
+    What did the authors try to accomplish?
+        Create a new Graph Neural Network (GNN) model that can take as input a set of labeled vertices and a set of unlabeled vertices. It can then classify the unlabeled vertices and give the reasons for which it did so. This is a novel approach since there hasn't been a GNN that can simultaneously predict and explain.
+    What were the key elements of the approach?
+        They created a new classification loss.
+        They generate a synthetic dataset, but also test on real world datasets.
+        For similarity they take into account both the structural similarity and the node attribute similarity.
+    What can you use yourself?
+        They say that very little research has been done in the area of GNN that can predict and explain.
+        GNNs have usecases in recommendation systems and credit approval systems. Look into it.
+    What other references do you want to follow?
+        42 (talks about GNNs in recommendation systems)
+
+## Image classification
+
+Learning Transferable Visual Models From Natural Language Supervision
+    What did the authors try to accomplish?
+        This is from OpenAI and is the paper introducing CLIP.
+    What were the key elements of the approach?
+        They scrape image-text pairs from the Internet.
+        They use contrastive learning.
+        They pass a batch of images through an encoder to get a feature vector.
+        They pass a corresponding batch holding the text of the image through another encoder to get its feature vector.
+        They combine these in a matrix and train the model to maximize the inner product on the diagonal.
+        The result is an image that can do zero-short classification tasks with SOTA performance providing not only the label, but also a context.
+    What can you use yourself?
+        Very lengthy paper. This is the best of the best and should be used as a guide when writing papers.
+    What other references do you want to follow?
+        None for now.
+
+Leveraging Local Patch Differences in Multi-Object Scenes for Generative Adversarial Attacks
+    What did the authors try to accomplish?
+        They successfully fool a multi-class image classification neural network for all labels in an image by misaligning patches in the feature map, produced by the model.
+    What were the key elements of the approach?
+        The perturbations are imperceivable.
+        They use a new loss function.
+        They use a generative model.
+    What can you use yourself?
+        The concept of using generative models to fool object classification models is new and provides room for research.
+    What other references do you want to follow?
+        1, 2, 5, 7, 12, 45
+
+Extremely Simple Activation Shaping for Out-of-Distribution Detection
+    What did the authors try to accomplish?
+        Develop a new neural network layer, called ASH, that allows for post-hod, real-time improvement of image classification.
+        Specifically, it helps the neural network in recognizing out-of-distribution (OOD) samples.
+    What were the key elements of the approach?
+        They pruned activation values from penultimate layers.
+    What can you use yourself?
+        This trick is similar to RELU. Can be used in projects to check whether it will improve model's performance on OOD samples.
+    What other references do you want to follow?
+        14, 23, 32, 42, 43
+
+Fine-grained Classification of Solder Joints with alpha-skew Jensen-Shannon Divergence
+    What did the authors try to accomplish?
+        Present a pipeline for solder joint classification in two classes: good and bad.
+    What were the key elements of the approach?
+        They use crossentropy with an additional penalty: α-skew Jensen-Shannon divergence.
+        The aim is to maximize the entropy, which in this case means pushing the distribution closer to uniform.
+    What can you use yourself?
+        They really well document their setup. Good to use as a template.
+        The α-skew Jensen-Shannon divergence is used as a way to mitigate overfitting when there is a high class imbalance.
+        Apparently You Only Look at Coefficients (YOLACT) is a thing - it's used for instance segmentation.
+    What other references do you want to follow?
+        None for now.
+
+## Image generation
+
+Text2Light: Zero-Shot Text-Driven HDR Panorama Generation
+    What did the authors try to accomplish?
+        Introduce a model that can generate 4K panoramic images without being trained on image-text pairs.
+    What were the key elements of the approach?
+        - use CLIP: zero-shot text-to-image generation and manipulation without paired data.
+        - have two stages: first generate a low resolution image and then scale it up using inverse tone mapping.
+        - use two codebooks
+    What can you use yourself?
+        - the algorithm is very detailed and there are a lot of helpful pictures
+        - if writing a paper related to GANs and high quality image generation, this paper will be inspirational
+    What other references do you want to follow?
+        inverse tone mapping, avatarCLIP, Text2Human, COCO-GAN, ExpandNet, GLIDE, StyleCLIP, Zero-Shot Text-to-Image Generation, Improved techniques for training gans, Deep learning for HDR imaging: state-of-the-art and future trends, CLIP-GEN, The unreasonable effectiveness of deep features as a perceptual metric.
+
+## Image segmentation
+
+Diabetic foot ulcers monitoring by employing super resolution and noise reduction deep learning techniques
+    What did the authors try to accomplish?
+        Improve the performance of models that segment diabetic foot ulcers.
+    What were the key elements of the approach?
+        They combined noise reduction and super-resolution. They also modified the loss function by including additional penalties.
+    What can you use yourself?
+        Interesting paper if concerned with semantic segmentation of medical images.
+    What other references do you want to follow?
+        3, 4, 5, 6, 8, 9, 10, 12, 13, 14, 17, 18, 19, 20, 24, 26, 28, 32, 33, 36
+
+## Math
+
+Pen & Paper Exercises in Machine Learning
+    What did the authors try to accomplish?
+        This is a useful collection of mathematical exercises and solutions related to the field of machine learning.
+        Topics covered: Linear Algebra, Optimization, Directed Graphical Models, Undirected Graphical Models, Expressive Power of Graphical Models, Factor Graphs and Message Passing, Inference for Hidden Markov Models, Model-Based Learning, Sampling and Monte Carlo Integration, Variational Inference.
+    What were the key elements of the approach?
+        - detailed solutions
+        - various topics covered
+    What can you use yourself?
+        - could be used as a refresher or all the covered topics
+        - could be used for a flashcard system where you are given the question and you have to write the solution
+    What other references do you want to follow?
+        - (book) Monte Carlo theory, methods and examples: https://artowen.su.domains/mc/
+        - (book) Pattern Recognition and Machine Learning by Christopher M. Bishop: https://link.springer.com/book/9780387310732
+        - Applications of Kalman Filtering in Aerospace 1960 to the Present
+        - Fast and robust fixed-point algorithms for independent component analysis
+
+How to play any mental game or A Completeness Theorem for Protocols with Honest Majority
+    What did the authors try to accomplish?
+        Lengthy paper in which the authors lay out a protocol for simulating the trusted party of an ideal game. That is, if more than half of the players follow the protocol, whatever a player (or a set of players of size less than n/2) knows at any step of the game, he would have also known in an ideal execution of the game with a trusted party.
+    What were the key elements of the approach?
+        Related to cryptography and game theory.
+        The knowledge constraints are satisfied in a computational complexity sense. Namely, any player in order to compute anything more than his due share of current state, should perform an exponential-time computation.
+    What can you use yourself?
+        This is mainly a paper to be used for source of ideas. Not as related to AI.
+    What other references do you want to follow?
+        None, since not directly related to AI.
+
+## Ontologies
+
+Comparison of Reasoners for large Ontologies in the OWL 2 EL Profile
+    What did the authors try to accomplish?
+        List characteristics by which to compare a set of reasoners for large ontologies.
+    What were the key elements of the approach?
+        They list and describe the characteristics - what they mean, why they use them, etc.
+        They describe the ontologies they used for comparison.
+        They describe the reasoners they tested.
+        Characterization dimensions: reasoning characteristics, practical usability, performance indicators.
+        Reasoners: CB, CEL, FaCT++, HermiT, Pellet, RacerPro, Snorocket, TrOWL.
+        Ontologies: GO, NCI, SNOMED CT.
+    What can you use yourself?
+        The main take from this papers is section 5 (Categorization of Reasoners) in which they describe the benchmarking and categorization procedure.
+        It shows how one would go about choosing a reasoner for a real world application - the characteristics they would use, how they would compare the reasoners, etc.
+    What other references do you want to follow?
+        the references referring to the reasoners and logic rules
+
+## Question-Answering
+
+Ask Me Anything: A simple strategy for prompting language models
+    What did the authors try to accomplish?
+        Construct new procedures by which a language model can improve its question-answering accuracy.
+    What were the key elements of the approach?
+        They transform each restrictive question into an open-ended one.
+        They use prompt chaining in order to get a number of answers which will then by aggregated.
+        They use WS (weak supervision) instead of majority vote when aggregating answers.
+    What can you use yourself?
+        These are useful tips if working on a question-answering task.
+    What other references do you want to follow?
+        None, since not interested in the topic.
+
+## Sarcasm Detection
+
+Computational Sarcasm Analysis on Social Media: A Systematic Review
+    What did the authors try to accomplish?
+        Describe the various methods used to perform sarcasm detection along with plenty of alternatives.
+    What were the key elements of the approach?
+        They used only English text.
+        Only texts from social media. In particular, mainly tweets and reddit posts.
+    What can you use yourself?
+        They list various ways to extract features from texts.
+        They list various models. One can use them as a way to improve SemEval scores. At one point they talk about DESC - an ensamble model that beat even neural networks in SemEval.
+        Serves as a really good example on how to perform systematic reviews. Maybe look into more such papers.
+    What other references do you want to follow?
+        There are a lot of them. For now none, since this would depend on which part one is interested it.
+
+## Statistics
+
+Fast and robust fixed-point algorithms for independent component analysis
+    What did the authors try to accomplish?
+        Present a new method for making features as statistically independent as possible.
+    What were the key elements of the approach?
+        They use information gain in order to construct a minimization problem. The goal is to minimize the dependence of the features.
+    What can you use yourself?
+        Very nice definition of ICA: A statistical method for transforming an observed multidimensional random vector into components that are statistically as independent from each other as possible.
+    What other references do you want to follow?
+        None, since not interested in the topic.
+
+Statistical Modeling: The Two Cultures
+    What did the authors try to accomplish?
+        Proposes the use of algorithmic models (decision trees, neural nets) to reach conclusions from data, as opposed to assume that data is generated by a stochastic data model (regressions).
+    What were the key elements of the approach?
+        Very interesting way of writing! Real-world experiences shared that demonstrate that using basic models like regressions can lead to wrong conclusions.
+        The critique is based on a lot of practical examples.
+        Alternatives are discussed: decision trees, svm, neural nets.
+    What can you use yourself?
+        Those should be takes as life advice :)
+            (a) Focus on finding a good solution—that’s what consultants get paid for.
+            (b) Live with the data before you plunge into modeling.
+            (c) Search for a model that gives a good solution, either algorithmic or data.
+            (d) Predictive accuracy on test sets is the criterion for how good the model is.
+            (e) Computers are an indispensable partner.
+        There are a lot of gems in this paper. Time should be spent to read it carefully.
+    What other references do you want to follow?
+        None, since this is more of an article.
+
+Tidy Data
+    What did the authors try to accomplish?
+        Very important classic and foundational table. Introduces the principles of data tidying.
+    What were the key elements of the approach?
+        Lots of examples on how to tidy a dataset are given. Also a case study at the end.
+    What can you use yourself?
+        structure of tidy datasets: each variable is a column, each observation is a row, and each type of observational unit is a table
+    What other references do you want to follow?
+        This is more of an article, rather than a research paper. It is important by itself.
+
+## Word Representations in Vector Space
+
+Efficient Estimation of Word Representations in Vector Space
+    What did the authors try to accomplish?
+        This is the classic paper introducing CBOW and Skip-gram models.
+    What were the key elements of the approach?
+        These are the algorithms that create word2vec.
+    What can you use yourself?
+        The architectures and the ideas are all to be referenced when needed.
+        CBOW: Predict target word from context.
+        Skip-gram: Predict context words from target word.
+    What other references do you want to follow?
+        There is a really nice YouTube video: https://www.youtube.com/watch?v=UqRCEmrv1gQ
+
+Distributed Representations of Sentences and Documents
+    What did the authors try to accomplish?
+        Introduce a new way for predicting the next word in a sentence - Paragraph Vector.
+    What were the key elements of the approach?
+        It deals with some of the weaknesses of the bag-of-words model - semantics of words and order of words. It looks like the way cbow works, if the word to be predicted was the next word. The only difference is that now we have another input apart from the words - a paragraph id, which stores the context/meaning/story of the specific paragraph.
+    What can you use yourself?
+        Could be used when comparing different models. Useful datasets for common NLP tasks are mentioned.
+    What other references do you want to follow?
+        1, 2
